@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.box {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  flex: 1;
+}
+
+/* Responsive Typography */
+@media (max-width: 600px) {
+  h1 { font-size: 24px; }
+  p { font-size: 14px; }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+  h1 { font-size: 32px; }
+  p { font-size: 16px; }
+}
+
+@media (min-width: 993px) {
+  h1 { font-size: 40px; }
+  p { font-size: 18px; }
+}
+
+/* Responsive Layout for Boxes */
+@media (min-width: 993px) {
+  .box { flex: 1 1 30%; }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+  .box { flex: 1 1 45%; }
+}
+
+@media (max-width: 600px) {
+  .box { flex: 1 1 100%; }
+}
